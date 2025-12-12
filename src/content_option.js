@@ -12,7 +12,7 @@ const introdata = {
         third: "I design, teach and build data-driven tools",
     },
     description: "Pharmacist turned Biomedical Engineer with strong experimental, computational biology and design experience. I love translating data and lab insights into real-world impact.",
-    your_img_url: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/main.png",
+    your_img_url: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/refs/heads/master/src/assets/images/main.png",
 };
 
 const dataabout = {
@@ -90,32 +90,32 @@ const services = [
 
 const dataportfolio = [
     {
-        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/gwas.png",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/refs/heads/master/src/assets/images/gwas.png",
         description: "Genetic underpinnings of ACE inhibitor ADR profiles across populations; 3k+ records cleaned and analyzed in R.",
         link: "https://github.com/aseessingh/ADR-Genetics-ACE",
     },
     {
-        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/qml.png",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/refs/heads/master/src/assets/images/qml.png",
         description: "Quantum SVM for space debris collision risk (Qiskit) on 960 samples × 12 features; delivered under 1-week deadline.",
         link: "https://github.com/CH1NMAY117/Space-Debris-Risk-Challenge-QML/tree/main",
     },
     {
-        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/arogya.png",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/refs/heads/master/src/assets/images/arogya.png",
         description: "Arogyavitals: low-cost maternal health monitoring prototype; sensor integration + Flutter app, 40% cost reduction.",
         link: "https://github.com/CH1NMAY117/mitralink/tree/master",
     },
     {
-        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/bpharm.png",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/refs/heads/master/src/assets/images/bpharm.png",
         description: "RP-UFLC method for caffeine estimation in soft drinks; >97% accuracy with validated QC workflow.",
         link: "https://drive.google.com/file/d/1xsKtJRfKnpuKvnyBhfyaPyNJopZIloTl/view",
     },
     {
-        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/aiims.png",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/refs/heads/master/src/assets/images/aiims.png",
         description: "NY-ESO-1 immunotherapy vector development at AIIMS; PCR, gel runs, transformations, early constructs.",
         link: "#",
     },
     {
-        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/media.png",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/refs/heads/master/src/assets/images/media.png",
         description: "Design & Media: social campaigns and freelance branding; print-ready assets.",
         link: "#",
     },
