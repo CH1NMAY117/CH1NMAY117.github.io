@@ -12,7 +12,7 @@ const introdata = {
         third: "I design, teach and build data-driven tools",
     },
     description: "Pharmacist turned Biomedical Engineer with strong experimental, computational biology and design experience. I love translating data and lab insights into real-world impact.",
-    your_img_url: "https://lh3.googleusercontent.com/sitesv/AAzXCkd9XyycTdgE_UdLwINsUlmo7XyTgx_S6hEVruqPPvZuvYgqX7CNkL50v1LJuS8rXOj39-tLMbZx2gKF4nGT2lohc-i_q9ntNVX9q4swOgIvKO0KaKT6B_otql9Gy0i2qElZy0MGlFaznPDI_Z9xx3ZffnT-5qDK0_3BuB3lEDG9Rbozr_NUdibS6aKDwrCHgj_xDfa5Uqrkwg1DMM1QX38RhRc9QFBOEgvNrFM=w1280",
+    your_img_url: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/main.png",
 };
 
 const dataabout = {
@@ -90,32 +90,32 @@ const services = [
 
 const dataportfolio = [
     {
-        img: "https://lh3.googleusercontent.com/sitesv/AAzXCkdH3n3m83b1PVtXtbLaBfJTlnzoQ1AwkTlgayWT_ASAOJNrRw2ajh_CnQWArXEUJ8b4t7TSNd7Y2KyglbzpbzoWV-xqwNlGed5UDWQ0qG-oY0NA_oUzcOKh-sCzuAs28qsUCsX92FLhvFxLrkzEOND0MU1DHTJGlzFABOx5Sv1EygSHS2udsTAO=w1280",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/gwas.png",
         description: "Genetic underpinnings of ACE inhibitor ADR profiles across populations; 3k+ records cleaned and analyzed in R.",
         link: "https://github.com/aseessingh/ADR-Genetics-ACE",
     },
     {
-        img: "https://lh3.googleusercontent.com/sitesv/AAzXCkfpiNX6A6bWFksYO9vkM87vUpjxVcT5rwA5iCdkQEp5bRUS3e62mbgSiqsiMlt8Kweo4myzoQg57b7V5NPXG_bYjxicEg897LZMt21mHRDdG33eNJN4VHi-9T7DjVA4yn0V_d9daJZjjeoJ2tbt2mse78PpFVW-hdcQurwzgDmb4eddp7f6jNpwS5w=w1280",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/qml.png",
         description: "Quantum SVM for space debris collision risk (Qiskit) on 960 samples × 12 features; delivered under 1-week deadline.",
         link: "https://github.com/CH1NMAY117/Space-Debris-Risk-Challenge-QML/tree/main",
     },
     {
-        img: "https://lh3.googleusercontent.com/sitesv/AAzXCkfU3d76ZY0-KHSB3VlILxhdjyH5vwLVgzVSeE4IWWyAWX2DiRUBtatANMhXUOud8V-GmLuGTfXGem2nbkaJIRctzhHLaEY51O7VUBrcJjqj197-effGIlZszHlBrBCgdG_vqk8cQ-aUDnMlpx1MOfcT8OcKcdKMNIs5DO-9RoZsXpnb4ohnCKMjIv0=w1280",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/arogya.png",
         description: "Arogyavitals: low-cost maternal health monitoring prototype; sensor integration + Flutter app, 40% cost reduction.",
         link: "https://github.com/CH1NMAY117/mitralink/tree/master",
     },
     {
-        img: "https://lh3.googleusercontent.com/sitesv/AAzXCkdqc1IA8orFO8uTJKSpDp0_CpN2_hgiryc2zKWLBA0BPBEdGHdUAvaSoHSpkFXNFteomOz1Cul6892gDB_QOFSVqdwcdHih4dAj6qYPN3fJV2Rbq3kXZEUFPP7phklC6zwi1k0JhkEeWJOUP2uYNOmXaVGk4CEX9zYRb3KFQHnPalfZgoVySIH6=w1280",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/bpharm.png",
         description: "RP-UFLC method for caffeine estimation in soft drinks; >97% accuracy with validated QC workflow.",
         link: "https://drive.google.com/file/d/1xsKtJRfKnpuKvnyBhfyaPyNJopZIloTl/view",
     },
     {
-        img: "https://lh3.googleusercontent.com/sitesv/AAzXCkfd2Nj6w2d3A8rYZ8q8uolIDozGWH7H94-iY_VQbZO1wYsmGoaOwDxFOrv4Ke3iaNrRMZsGnPAubCnzYMcVqKlFQzVDngqerqxZW99E1iUbrFMVR-7_R9RJPZeK9VTX-mxI0HjWLnTBx6eyKcqCt6eDl_0gjpXCki750i7dbQlY0kp4KePUofBX7bs=w1280",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/aiims.png",
         description: "NY-ESO-1 immunotherapy vector development at AIIMS; PCR, gel runs, transformations, early constructs.",
         link: "#",
     },
     {
-        img: "https://lh3.googleusercontent.com/sitesv/AAzXCkdkuJn9FYGxIazyM4kZjxVY5YaGY00wbmQdDg1vHygVN65g7ZPljODkRVgnhyDz3gNDrU8lgLiyIHnBPhAL8xzbfY1nRUHGxN8xT7bTWnO5d_xrFJ5vJB6yae7n9u1EfQscQXWpd_fUjpqu7DhDqL8iSHaNQbmrv9ayywNbO5wKQ7TZeW38otjXBlc=w1280",
+        img: "https://raw.githubusercontent.com/CH1NMAY117/CH1NMAY117.github.io/blob/master/src/assets/images/media.png",
         description: "Design & Media: social campaigns and freelance branding; print-ready assets.",
         link: "#",
     },
