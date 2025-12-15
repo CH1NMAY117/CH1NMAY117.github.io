@@ -41,6 +41,9 @@ const Headermain = () => {
                     <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
                   </li>
                   <li className="menu_item">
+                    <Link onClick={handleToggle} to="/designmedia" className="my-3">Design</Link>
+                  </li>
+                  <li className="menu_item">
                   <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
                   </li>
                   <li className="menu_item">
@@ -50,13 +53,16 @@ const Headermain = () => {
               </div>
             </div>
           </div>
-          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.twitter}>Twitter</a>
+          <div className="menu_footer d-flex flex-row justify-content-between align-items-center position-absolute w-100 p-3">
+            <div className="d-flex align-items-center gap-3 flex-wrap">
+              <a href={socialprofils.linkedin}>LinkedIn</a>
+              <a href={socialprofils.github}>Github</a>
             </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
+            <div className="d-flex ms-auto">
+              {socialprofils.resume ? (
+                <a href={socialprofils.resume} className="menu-resume-link" target="_blank" rel="noopener noreferrer">Resume</a>
+              ) : null}
+            </div>
           </div>
         </div>
       </header>

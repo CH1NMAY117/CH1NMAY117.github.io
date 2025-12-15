@@ -174,7 +174,7 @@
 .the_menu .menu_item>a {
     color: var(--text-color-2);
     line-height: 1;
-    font-size: 2rem;
+    font-size: 1.6rem; /* slightly reduced */
     display: inline-block;
     position: relative;
     transition: color 250ms cubic-bezier(0, 0, 0.58, 1) 0s;
@@ -189,7 +189,7 @@
 
 @media (min-width: 768px) {
     .the_menu .menu_item>a {
-        font-size: 4.8vw;
+        font-size: 4vw; /* slightly reduced on larger screens */
     }
 }
 
@@ -204,4 +204,8 @@
     color: var(--text-color-2);
     margin-right: 10px;
     text-decoration: none;
+}
+
+.menu_responsive_right {
+    margin-left: auto;
 }

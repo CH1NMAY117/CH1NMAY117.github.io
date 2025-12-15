@@ -16,31 +16,42 @@ import { socialprofils } from "../../content_option";
 
 const ICON_MAPPING = {
   default: FaCircle,
-  facebook: FaFacebookF,
   github: FaGithub,
   instagram: FaInstagram,
   linkedin: FaLinkedin,
   snapchat: FaSnapchatGhost,
   tiktok: FaTiktok,
-  twitter: FaTwitter,
   twitch: FaTwitch,
   youtube: FaYoutube
 };
+
+// Only show whitelisted platforms; exclude removed ones and non-social like resume
+const ALLOWED_PLATFORMS = new Set([
+  "github",
+  "linkedin",
+  "instagram",
+  "snapchat",
+  "tiktok",
+  "twitch",
+  "youtube",
+]);
 
 export const Socialicons = (params) => {
   return (
     <div className="stick_follow_icon">
       <ul>
-        {Object.entries(socialprofils).map(([platform, url]) => {
-          const IconComponent = ICON_MAPPING[platform] || ICON_MAPPING.default;
-          return (
-            <li key={platform}>
-              <a href={url}>
-                <IconComponent />
-              </a>
-            </li>
-          );
-        })}
+        {Object.entries(socialprofils)
+          .filter(([platform, url]) => ALLOWED_PLATFORMS.has(platform) && Boolean(url))
+          .map(([platform, url]) => {
+            const IconComponent = ICON_MAPPING[platform] || ICON_MAPPING.default;
+            return (
+              <li key={platform}>
+                <a href={url}>
+                  <IconComponent />
+                </a>
+              </li>
+            );
+          })}
       </ul>
       <p>Follow Me</p>
     </div>
