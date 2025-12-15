@@ -156,19 +156,18 @@ export const DesignMedia = () => {
         <Row className="mb-2">
           <Col lg="12">
             <p className="text-center">
-              Paridrishya Portfolio {
-                <a
-                  className="inline-link"
-                  href={designmediadata.paridrishyaPortfolioLink || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => {
-                    if (!designmediadata.paridrishyaPortfolioLink) e.preventDefault();
-                  }}
-                >
-                  here
-                </a>
-              }
+              Paridrishya Portfolio{" "}
+              <a
+                className="inline-link"
+                href={designmediadata.paridrishyaPortfolioLink || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  if (!designmediadata.paridrishyaPortfolioLink) e.preventDefault();
+                }}
+              >
+                here
+              </a>
             </p>
           </Col>
         </Row>
