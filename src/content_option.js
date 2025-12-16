@@ -135,7 +135,7 @@ const contactConfig = {
 const socialprofils = {
     github: "https://github.com/CH1NMAY117",
     linkedin: "https://linkedin.com/in/chinmay-arora-s117",
-    resume: "https://drive.google.com/file/d/14UJSIoVYDjHERZe3PbHs03gKmsjUZDFr/view?usp=sharing",
+    resume: "https://sites.google.com/view/chinmay117/cv-resume",
 };
 
 // Design & Media Page Content

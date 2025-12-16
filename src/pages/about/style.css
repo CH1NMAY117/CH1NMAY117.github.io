@@ -5,6 +5,12 @@
 .table td,
 .table th {
     color: var(--text-color);
+    background: transparent;
+    border-color: var(--text-color-2);
+}
+
+.table {
+    background: transparent;
 }
 
 .t_border {
