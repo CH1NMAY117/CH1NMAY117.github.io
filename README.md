@@ -1,40 +1,26 @@
-### Description
+# ch1nmay117.github.io
 
-A simple portfolio template for developer/designers built with React. 
+Personal site of **Chinmay Arora** — biomedical engineer and registered pharmacist working on
+computational target discovery for immune-cell therapies.
 
-### [live preview](https://ubaimutl.github.io/react-portfolio/)
+Live at <https://ch1nmay117.github.io>.
 
-[Refer](https://www.youtube.com/watch?v=q94AFjQlETw)
+## How it works
 
-[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://ubaimutl.github.io/react-portfolio/)
+Plain HTML and CSS with no build step, framework or dependencies, served by GitHub Pages.
 
-### Features
+| Path | What it is |
+| --- | --- |
+| `index.html` | Home: research, projects, experience, toolkit, recognition |
+| `design.html` | Design and media gallery |
+| `style.css` | All styling |
+| `img/` | Photographs and thesis figures |
+| `design/` | Design and photography work |
 
-- Fully Responsive
-- Multi-Page Layout
-- Contact Form With EmailJs
-- React-Bootstrap
-- Edit Content From One Place
+To change the content, edit the HTML directly. To preview it locally, run
+`python3 -m http.server` in this folder and open <http://localhost:8000>.
 
-### Setup
+## Licence
 
-Get the code
-
-<pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
- 
-Install required dependencies
-
-<pre>yarn install</pre>
-
-
-Start the server
-
-<pre>yarn start</pre>
-
-### More
-
-Modify pages content in  `src/content_option.js`.
-
-### Thanks
-
-If you like this portfolio template don't forget give it a ⭐ 
+The code is released under the [MIT licence](LICENSE). The photographs, design work and
+written content are © Chinmay Arora and are not covered by it.
