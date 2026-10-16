@@ -37,7 +37,7 @@ If you would rather host the CV on Google Drive, upload it there, use **File →
 to replace the file whenever it changes (which keeps the same link), and point the CV links at that
 URL. They are the `href="cv.pdf"` attributes in the five HTML files.
 
-## Licence
+## License
 
-The code is released under the [MIT licence](LICENSE). The photographs, design work and written
+The code is released under the [MIT license](LICENSE). The photographs, design work and written
 content are © Chinmay Arora and are not covered by it.
