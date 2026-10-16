@@ -48,7 +48,7 @@ section>.wrap>h2,.page-head h2{font-size:clamp(27px,3.4vw,37px);max-width:24ch}
 .lede{margin:18px 0 0;max-width:64ch;color:var(--fg-2)}
 
 /* ---------- page head ---------- */
-.page-head{padding:72px 0 10px}
+.page-head{padding-top:72px;padding-bottom:10px}
 .page-head p.lede{font-size:19px}
 
 /* ---------- hero ---------- */
