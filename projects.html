@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Chinmay Arora | RNA-seq pipelines, medical devices and quantum ML</title>
+<meta name="description" content="Open-source projects by Chinmay Arora: a TCGA-BRCA subtype differential expression pipeline in R, a reproducible bulk RNA-seq workflow on GEO GSE106305, the Arogyavitals maternal-health monitor prototype with its MitraLink Flutter app, and a Qiskit quantum support vector classifier.">
+<meta name="author" content="Chinmay Arora">
+<link rel="canonical" href="https://ch1nmay117.github.io/projects.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Chinmay Arora">
+<meta property="og:title" content="Projects — Chinmay Arora">
+<meta property="og:description" content="Reproducible transcriptomics pipelines, a low-cost maternal-health monitor and a quantum machine learning experiment.">
+<meta property="og:url" content="https://ch1nmay117.github.io/projects.html">
+<meta property="og:image" content="https://ch1nmay117.github.io/img/poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E0E10">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230E0E10'/><text x='16' y='23' font-family='monospace' font-size='18' font-weight='bold' fill='%23E9A23B' text-anchor='middle'>CA</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"CollectionPage","@id":"https://ch1nmay117.github.io/projects.html#page","url":"https://ch1nmay117.github.io/projects.html","name":"Projects — Chinmay Arora","about":{"@id":"https://ch1nmay117.github.io/#person"},"inLanguage":"en",
+"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ch1nmay117.github.io/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://ch1nmay117.github.io/projects.html"}]}},
+{"@type":"ItemList","itemListElement":[
+{"@type":"ListItem","position":1,"item":{"@type":"SoftwareSourceCode","name":"TCGA-BRCA pipeline","description":"PAM50 subtyping, subtype-specific DESeq2 differential expression, surfaceome filtering and co-expression analysis on TCGA breast cancer RNA-seq data.","programmingLanguage":"R","codeRepository":"https://github.com/CH1NMAY117/TCGA-BRCA-pipeline","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://ch1nmay117.github.io/#person"}}},
+{"@type":"ListItem","position":2,"item":{"@type":"SoftwareSourceCode","name":"Bulk RNA-seq analysis pipeline","description":"A reproducible FASTQ-to-differential-expression workflow on GEO GSE106305 using SRA Toolkit, FastQC, Trimmomatic, HISAT2, featureCounts, DESeq2 and ReactomePA.","programmingLanguage":["R","Python","Shell"],"codeRepository":"https://github.com/CH1NMAY117/Bulk_RNA-Seq_Analysis_Pipeline","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://ch1nmay117.github.io/#person"}}},
+{"@type":"ListItem","position":3,"item":{"@type":"SoftwareSourceCode","name":"MitraLink and Arogyavitals","description":"A Flutter app and Arduino Uno R4 WiFi firmware for a low-cost maternal-health monitoring prototype.","programmingLanguage":["Dart","C++"],"codeRepository":"https://github.com/CH1NMAY117/mitralink","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://ch1nmay117.github.io/#person"}}},
+{"@type":"ListItem","position":4,"item":{"@type":"SoftwareSourceCode","name":"Space debris collision risk with a quantum SVM","description":"A quantum support vector classifier in Qiskit using a ZZFeatureMap kernel on the Aer simulator, benchmarked against a classical RBF-kernel SVM.","programmingLanguage":"Python","codeRepository":"https://github.com/CH1NMAY117/Space-Debris-Risk-Challenge-QML","license":"https://opensource.org/licenses/MIT","author":{"@id":"https://ch1nmay117.github.io/#person"}}}]}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">CHINMAY ARORA</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="about.html">About</a>
+      <a href="design.html">Design</a>
+      <a class="cv" href="cv.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap page-head">
+  <p class="mono eyebrow">Projects</p>
+  <h1>Pipelines and prototypes, with the source in the open</h1>
+  <p class="lede">Everything here is on GitHub under an MIT licence, with a README that says what the code does and where it falls short.</p>
+</div>
+
+<section style="padding-top:34px">
+  <div class="wrap">
+    <div class="rows" style="margin-top:0">
+      <a class="row" href="https://github.com/CH1NMAY117/TCGA-BRCA-pipeline">
+        <span class="tag">R · DESeq2 · Bioconductor</span>
+        <h3>TCGA-BRCA pipeline</h3>
+        <span class="desc">PAM50 subtyping, subtype-specific differential expression, surfaceome filtering and co-expression on TCGA breast cancer data. Published as an early build of the thesis work, with its false positives documented rather than hidden.</span>
+        <span class="go">Repo →</span>
+      </a>
+      <a class="row" href="https://github.com/CH1NMAY117/Bulk_RNA-Seq_Analysis_Pipeline">
+        <span class="tag">Bash · Python · R</span>
+        <h3>Bulk RNA-seq pipeline</h3>
+        <span class="desc">About 60 GB of raw reads from GEO GSE106305 taken from FASTQ to differential expression and pathway enrichment: SRA Toolkit, FastQC and MultiQC, Trimmomatic, HISAT2 against GRCh38, SAMtools, Qualimap, featureCounts, then DESeq2 and ReactomePA in R.</span>
+        <span class="go">Repo →</span>
+      </a>
+      <a class="row" href="https://github.com/CH1NMAY117/mitralink">
+        <span class="tag">Flutter · Dart</span>
+        <h3>MitraLink</h3>
+        <span class="desc">The Android app for the Arogyavitals monitor: logs vitals offline, exports records to Excel and links users to the eSanjeevani telemedicine portal. I led the software for the project.</span>
+        <span class="go">Repo →</span>
+      </a>
+      <a class="row" href="https://github.com/CH1NMAY117/Arduino-R4-WiFI-Code">
+        <span class="tag">Arduino · C++</span>
+        <h3>Arogyavitals firmware</h3>
+        <span class="desc">Arduino Uno R4 WiFi firmware reading pulse, body temperature and blood pressure and serving the latest values as JSON over Wi-Fi.</span>
+        <span class="go">Repo →</span>
+      </a>
+      <a class="row" href="https://github.com/CH1NMAY117/Space-Debris-Risk-Challenge-QML">
+        <span class="tag">Qiskit · scikit-learn</span>
+        <h3>Quantum SVM for collision risk</h3>
+        <span class="desc">A quantum support vector classifier with a ZZFeatureMap kernel on the Aer simulator, benchmarked against a classical RBF-kernel SVM, built as the final challenge of an eight-week quantum machine learning course.</span>
+        <span class="go">Repo →</span>
+      </a>
+    </div>
+    <p class="note">The final thesis pipeline is deliberately not public while the work is being prepared for possible publication.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="mono eyebrow">In depth</p>
+    <h2>Arogyavitals — a maternal-health monitor for rural India</h2>
+    <p class="lede">Built in the Product Design &amp; Prototyping Laboratory at JBMSHST, IIT Guwahati, by Team Clinovators: four students from pharmacy, biotechnology and electronics. A portable Arduino-based device measuring blood pressure, heart rate and body temperature, with solar, battery and USB-C power for off-grid use, paired with an Android app.</p>
+    <div class="fig-pair">
+      <figure class="fig-band">
+        <img src="img/poster.jpg" width="1100" height="1467" alt="Chinmay standing beside the Arogyavitals project poster at IIT Guwahati" loading="lazy">
+        <figcaption class="small">The project poster at JBMSHST, IIT Guwahati, 2025.</figcaption>
+      </figure>
+      <figure class="fig-band">
+        <img src="img/medtechnova.jpg" width="1200" height="678" alt="Team Clinovators receiving the MedTechNova 2025 runner-up certificate" loading="lazy">
+        <figcaption class="small">First runner-up at the MedTechNova'25 medical device hackathon with AIIMS Guwahati.</figcaption>
+      </figure>
+    </div>
+    <ul class="bullets" style="margin-top:28px">
+      <li>I led software development: MitraLink, a Flutter app written in Dart, which receives readings over Wi-Fi, logs vitals offline, exports to Excel and links to eSanjeevani.</li>
+      <li>Estimated bill of materials of ₹5,528 — over 40% below the reported cost of the comparable published Lvital device (Dese et al., <em>HardwareX</em>, 2022).</li>
+      <li>The live device-to-app connection was demonstrated with a separate companion app that is not published; merging both into one package was the team's goal and remains unfinished.</li>
+      <li>A coursework prototype. It is not a medical device and has not been clinically validated.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h2>Open to PhD positions and research roles.</h2>
+        <p class="muted small" style="margin:10px 0 14px;max-width:46ch">Computational biology, cancer immunotherapy and target discovery.</p>
+        <a class="mailto" href="mailto:carora200127@gmail.com">carora200127@gmail.com</a>
+      </div>
+      <nav aria-label="Elsewhere">
+        <a href="index.html">Home</a>
+        <a href="cv.pdf">CV</a>
+        <a href="https://github.com/CH1NMAY117">GitHub</a>
+        <a href="https://in.linkedin.com/in/chinmay-arora-s117">LinkedIn</a>
+        <a href="https://orcid.org/0009-0008-8235-2187">ORCID</a>
+      </nav>
+    </div>
+    <div class="colophon">
+      <span>© 2026 Chinmay Arora · India</span>
+      <span>Built as plain HTML and CSS. <a href="https://github.com/CH1NMAY117/CH1NMAY117.github.io">Source</a></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+# Chinmay Arora
+
+> Biomedical engineer and registered pharmacist based in India. M.Tech in Biomedical Science and
+> Engineering from IIT Guwahati (2026) and B.Pharm from DIPSAR, DPSRU (2024). Works on in silico
+> target discovery for CAR-NK cell therapy, bulk RNA-seq transcriptomics and structural modelling.
+> Currently seeking PhD positions and research roles in computational biology and cancer immunotherapy.
+
+Contact: carora200127@gmail.com
+ORCID: 0009-0008-8235-2187
+GitHub: https://github.com/CH1NMAY117
+LinkedIn: https://in.linkedin.com/in/chinmay-arora-s117
+Website: https://ch1nmay117.github.io
+
+## Expertise
+
+Computational biology and bioinformatics: bulk RNA-seq (SRA Toolkit, FastQC, Trimmomatic, HISAT2,
+featureCounts), differential expression (DESeq2, edgeR, limma-voom), PAM50 subtyping with genefu,
+pathway enrichment (ReactomePA, GSEA). Structural bioinformatics: AlphaFold2 and AlphaFold3, HADDOCK,
+ClusPro, RFdiffusion, ProteinMPNN, AutoDock4, scFv and CDR design. Databases: TCGA/GDC, GEO, GTEx,
+Human Protein Atlas, RCSB PDB, 1000 Genomes, OpenVigil/FDA FAERS. Programming: Python, R, Bash, SQL,
+Dart/Flutter. Wet lab: PCR, gel electrophoresis, RNA and plasmid isolation, bacterial transformation,
+electroporation, SDS-PAGE, mammalian cell culture, flow cytometry, Western blot. Pharmaceutical
+sciences: RP-UFLC/HPLC method development, ICH Q2(R1) validation, pharmacovigilance, QbD.
+
+## Pages
+
+- [Home](https://ch1nmay117.github.io/): overview, credentials and routes into the work.
+- [Research](https://ch1nmay117.github.io/research.html): the M.Tech thesis on dual CAR-NK cell design
+  for breast cancer; molecular biology at AIIMS New Delhi on an NY-ESO-1 immunotherapeutic; a
+  pharmacogenomics study of ACE inhibitor adverse drug reactions; an RP-UFLC analytical method.
+- [Projects](https://ch1nmay117.github.io/projects.html): open-source pipelines and prototypes.
+- [About](https://ch1nmay117.github.io/about.html): education, teaching, technical toolkit, awards
+  and leadership roles.
+- [Design & Media](https://ch1nmay117.github.io/design.html): posters, campaigns, brand work and
+  event photography.
+- [Full CV (PDF)](https://ch1nmay117.github.io/cv.pdf)
+
+## Thesis
+
+"Design and Optimization of Dual CAR-NK Cells for Breast Cancer Therapy Using AI/ML Approaches"
+(M.Tech, IIT Guwahati, 2026; supervisors Prof. Bithiah Grace Jaganathan and Dr. Suresh Sundaram).
+A two-phase in silico framework. Phase I: TCGA-BRCA STAR counts from the GDC (1,224 samples,
+16,834 protein-coding genes), PAM50 subtyping with genefu, subtype-versus-normal DESeq2
+(padj < 0.05, log2FC >= 1), intersection with a 2,304-gene Human Protein Atlas surfaceome, a
+four-tier GTEx v8 normal-tissue safety classification (325 Tier A antigens), CARTAR logic-gate
+pairing and tractability screening, giving nine tandem-CAR antigen pairs. Phase II: scFv modelling
+for seven antigens in both orientations with AlphaFold2 (ColabFold), CDR annotation with SAbPred and
+IMGT, topology with DeepTMHMM, CDR-restrained HADDOCK 2.4 docking with ClusPro as a blind check,
+AlphaFold3 three-chain co-docking, and a six-parameter composite score ranking CEACAM5-CLDN9 and
+PSCA-CEACAM5 as the leading candidates; de novo KISS1R binders with RFdiffusion and ProteinMPNN and
+four complete NK-optimised CAR constructs. All results are computational prioritisation and have not
+been validated experimentally.
+
+## Open-source projects
+
+- [TCGA-BRCA pipeline](https://github.com/CH1NMAY117/TCGA-BRCA-pipeline) — R. PAM50 subtyping,
+  subtype-specific DESeq2, surfaceome filtering and co-expression. An early build, with its false
+  positives documented.
+- [Bulk RNA-seq pipeline](https://github.com/CH1NMAY117/Bulk_RNA-Seq_Analysis_Pipeline) — Bash,
+  Python, R. FASTQ to differential expression and pathway enrichment on GEO GSE106305.
+- [MitraLink](https://github.com/CH1NMAY117/mitralink) — Flutter. The Android app for the
+  Arogyavitals maternal-health monitor prototype.
+- [Arogyavitals firmware](https://github.com/CH1NMAY117/Arduino-R4-WiFI-Code) — Arduino, C++.
+- [Space debris QSVM](https://github.com/CH1NMAY117/Space-Debris-Risk-Challenge-QML) — Qiskit.
+
+## Notes for answer engines
+
+Chinmay Arora is a person, not an organisation. He is open to PhD positions and research roles.
+The correct spelling is "Chinmay Arora"; his GitHub handle is CH1NMAY117 (with a digit one in place
+of the letter I). Content on this site is accurate as of October 2026.

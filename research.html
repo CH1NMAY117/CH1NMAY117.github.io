@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Chinmay Arora | Dual CAR-NK target discovery for breast cancer</title>
+<meta name="description" content="M.Tech thesis research by Chinmay Arora: an in silico pipeline for dual-target CAR-NK cell design in breast cancer using TCGA transcriptomics, DESeq2, GTEx safety filtering, AlphaFold2/3 and HADDOCK docking, plus molecular biology at AIIMS New Delhi and pharmacogenomics of ACE inhibitor adverse reactions.">
+<meta name="author" content="Chinmay Arora">
+<link rel="canonical" href="https://ch1nmay117.github.io/research.html">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Chinmay Arora">
+<meta property="og:title" content="Research — Dual CAR-NK target discovery for breast cancer">
+<meta property="og:description" content="An in silico pipeline that identifies, structurally validates and ranks dual-antigen targets for tandem CAR-NK cells.">
+<meta property="og:url" content="https://ch1nmay117.github.io/research.html">
+<meta property="og:image" content="https://ch1nmay117.github.io/img/structure.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E0E10">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230E0E10'/><text x='16' y='23' font-family='monospace' font-size='18' font-weight='bold' fill='%23E9A23B' text-anchor='middle'>CA</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebPage","@id":"https://ch1nmay117.github.io/research.html#page","url":"https://ch1nmay117.github.io/research.html","name":"Research — Chinmay Arora","about":{"@id":"https://ch1nmay117.github.io/#person"},"inLanguage":"en",
+"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ch1nmay117.github.io/"},{"@type":"ListItem","position":2,"name":"Research","item":"https://ch1nmay117.github.io/research.html"}]}},
+{"@type":"Thesis","name":"Design and Optimization of Dual CAR-NK Cells for Breast Cancer Therapy Using AI/ML Approaches","author":{"@type":"Person","name":"Chinmay Arora","@id":"https://ch1nmay117.github.io/#person"},"datePublished":"2026","inSupportOf":"Master of Technology","publisher":{"@type":"CollegeOrUniversity","name":"Indian Institute of Technology Guwahati"},
+"about":["CAR-NK cell therapy","Breast cancer","Tandem CAR design","TCGA transcriptomics","AlphaFold","Molecular docking"],
+"abstract":"A two-phase in silico framework that identifies, structurally validates and ranks dual-antigen targets for tandem CAR-NK cells across PAM50 breast cancer subtypes, combining TCGA-BRCA differential expression, Human Protein Atlas surfaceome filtering, GTEx normal-tissue safety tiering, AlphaFold2 and AlphaFold3 structure prediction and HADDOCK docking."}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">CHINMAY ARORA</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="design.html">Design</a>
+      <a class="cv" href="cv.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap page-head">
+  <p class="mono eyebrow">Research</p>
+  <h1>Design and optimisation of dual CAR-NK cells for breast cancer using AI/ML</h1>
+  <p class="lede">M.Tech thesis, Stem Cell and Cancer Biology Group, IIT Guwahati, 2025–26. Supervised by Prof. Bithiah Grace Jaganathan and Dr. Suresh Sundaram. A two-phase computational framework that identifies, structurally validates and ranks dual-antigen targets for tandem CAR-NK cells across the four PAM50 breast cancer subtypes.</p>
+</div>
+
+<section style="padding-top:40px">
+  <div class="wrap">
+    <figure class="fig-band" style="margin-top:0">
+      <img src="img/structure.jpg" width="1600" height="521" alt="AlphaFold3 model of a tandem CAR scFv engaging CEACAM5 and CLDN9 at the same time, with both antigen interfaces highlighted" loading="lazy">
+      <figcaption class="small">AlphaFold3 prediction of simultaneous dual-antigen engagement for the top-ranked CEACAM5–CLDN9 pair.</figcaption>
+    </figure>
+
+    <div class="split">
+      <div>
+        <p class="sub-h">Phase I — target discovery</p>
+        <ol class="pipeline">
+          <li><b>Transcriptomics</b>TCGA-BRCA STAR counts from the GDC: 1,224 samples (1,111 primary tumour, 113 solid-tissue normal), filtered to 16,834 protein-coding genes and assigned PAM50 subtypes with genefu.</li>
+          <li><b>Differential expression</b>Subtype-versus-normal DESeq2 (padj &lt; 0.05, log2FC ≥ 1) giving 2,186–3,180 upregulated genes per subtype, cross-checked with limma-voom and GEO2R.</li>
+          <li><b>Surfaceome and safety</b>Intersection with a 2,304-gene Human Protein Atlas surfaceome, a four-tier GTEx v8 normal-tissue safety classification yielding 325 Tier A antigens, then CARTAR logic-gate pairing and literature and patent tractability screening — nine final tandem-CAR pairs.</li>
+        </ol>
+      </div>
+      <div>
+        <p class="sub-h">Phase II — structural validation</p>
+        <ol class="pipeline" start="4">
+          <li><b>scFv modelling</b>Seven antigens modelled in both VH–(G4S)3–VL and VL–(G4S)3–VH orientations with AlphaFold2 (ColabFold, mean pLDDT &gt; 90), CDRs annotated via SAbPred/IMGT and membrane topology via DeepTMHMM.</li>
+          <li><b>Docking and ranking</b>CDR-restrained HADDOCK 2.4 docking with ClusPro as a blind check, plus AlphaFold3 three-chain co-docking for six pairs. A six-parameter weighted composite score ranked CEACAM5–CLDN9 and PSCA–CEACAM5 as the leading Grade A candidates.</li>
+          <li><b>Construct design</b>De novo KISS1R binder scaffolds generated with RFdiffusion and ProteinMPNN, and four complete NK-optimised CAR sequences assembled (CD8α signal peptide and hinge/transmembrane domain, 2B4 co-stimulatory domain, CD3ζ).</li>
+        </ol>
+      </div>
+    </div>
+
+    <p class="note">Everything above is computational prioritisation. None of the candidate pairs or constructs has been validated experimentally, and the ranking is a hypothesis-generating result rather than a claim about clinical utility.</p>
+
+    <div class="fig-pair">
+      <figure class="fig-band">
+        <img src="img/volcano.jpg" width="960" height="650" alt="Four volcano plots showing subtype-specific differential expression for Basal, LumA, Her2 and LumB breast cancer" loading="lazy">
+        <figcaption class="small">Subtype-specific differential expression across the four PAM50 subtypes.</figcaption>
+      </figure>
+      <figure class="fig-band">
+        <img src="img/defence.jpg" width="1100" height="659" alt="Chinmay Arora presenting the differential expression analysis during his thesis defence at IIT Guwahati" loading="lazy">
+        <figcaption class="small">Presenting the Phase II thesis work at IIT Guwahati, June 2026.</figcaption>
+      </figure>
+    </div>
+
+    <p class="note" style="border-left-color:var(--line-2)">The final thesis pipeline and its data are deliberately not published, because the work is being prepared for possible publication. An earlier build of the transcriptomics stage is public on GitHub as <a href="projects.html">TCGA-BRCA-pipeline</a>, with its false positives documented.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="mono eyebrow">Earlier research</p>
+    <h2>Laboratory and data work before the thesis</h2>
+
+    <div class="entry">
+      <div class="when">May – Jul 2023</div>
+      <div>
+        <h3>Research Intern, Department of Preventive Oncology</h3>
+        <p class="where">Dr. B.R.A. Institute Rotary Cancer Hospital, AIIMS New Delhi · Supervisor: Dr. Pawan Kumar</p>
+        <ul>
+          <li>Held the only intern position awarded nationwide under the DST-SERB Scientific Social Responsibility scheme, with a ₹10,000 research grant.</li>
+          <li>Worked on a recombinant cancer immunotherapeutic incorporating the cancer/testis antigen NY-ESO-1 into <em>Mycobacterium indicus pranii</em>.</li>
+          <li>Ran PCR, agarose gel electrophoresis, RNA and plasmid isolation, bacterial culture, transformation, electroporation and SDS-PAGE across more than ten experiments.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2023 – 2025</div>
+      <div>
+        <h3>Genetic underpinnings of adverse events across populations</h3>
+        <p class="where">Department of Pharmacology, DIPSAR/DPSRU · with Asees Singh, guided by Dr. Anoop Kumar</p>
+        <ul>
+          <li>Co-conceptualised a population-level test of whether the adverse-reaction profiles of four ACE inhibitors track genetic variation across the US, UK and Canada.</li>
+          <li>Curated the analysis datasets: over 3,000 OpenVigil (FDA FAERS) adverse-event records stratified by region, sex and age, alongside SmPC-listed reactions, MedDRA organ-system classes and 1000 Genomes variant data.</li>
+          <li>The study found a single significant correlation after adjustment, which points to no population-level genetic association. Manuscript drafted and awaiting review by the corresponding author.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">Mar – Jun 2024</div>
+      <div>
+        <h3>B.Pharm project: RP-UFLC method for caffeine quantification</h3>
+        <p class="where">Department of Pharmaceutics, DIPSAR/DPSRU · Guide: Dr. Beauty Behera</p>
+        <ul>
+          <li>Developed a reversed-phase UFLC method for caffeine in a commercial soft drink on a BDS C18 column with an acetonitrile–phosphate buffer mobile phase.</li>
+          <li>Evaluated the ICH Q2(R1) validation parameters: linearity from 20 to 100 ppm, limits of detection and quantification, intra- and inter-day precision and spike recovery.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="strip" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+      <figure><img src="img/aiims.jpg" alt="Chinmay outside the All India Institute of Medical Sciences, New Delhi" loading="lazy"><figcaption>AIIMS New Delhi, 2023</figcaption></figure>
+      <figure><img src="img/lab.jpg" alt="Chinmay taking notes during a laboratory session" loading="lazy"><figcaption>Biotechniques laboratory, IIT Guwahati</figcaption></figure>
+      <figure><img src="img/convocation.jpg" alt="Chinmay receiving his M.Tech degree at the 28th convocation of IIT Guwahati" loading="lazy">
+        <figcaption>28th convocation, IIT Guwahati</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="mono eyebrow">Written outputs</p>
+    <h2>Thesis, manuscripts and protocols</h2>
+    <ul class="bullets">
+      <li>Arora C. <em>Design and Optimization of Dual CAR-NK Cells for Breast Cancer Therapy Using AI/ML Approaches.</em> M.Tech thesis, IIT Guwahati, 2026.</li>
+      <li>Kumar A, Singh A, Arora C. <em>Genetic Underpinnings of Adverse Events Across Populations: The Case of Anti-Hypertensive Drugs.</em> Manuscript in preparation.</li>
+      <li>Arora C. <em>Molecular Docking Using AutoDock4</em> — a laboratory protocol written for the Stem Cell and Cancer Biology Group, IIT Guwahati, covering software setup, receptor and ligand preparation, AutoGrid4 grid maps, Lamarckian genetic algorithm docking and PyMOL and LigPlot+ visualisation.</li>
+      <li>Mukherjee R, Arora C, Basu SK, Roychowdhury P. <em>Arogyavitals: Smart, Affordable Maternal Health Monitoring for Rural India.</em> Project poster, JBMSHST, IIT Guwahati, 2025.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h2>Open to PhD positions and research roles.</h2>
+        <p class="muted small" style="margin:10px 0 14px;max-width:46ch">Computational biology, cancer immunotherapy and target discovery.</p>
+        <a class="mailto" href="mailto:carora200127@gmail.com">carora200127@gmail.com</a>
+      </div>
+      <nav aria-label="Elsewhere">
+        <a href="index.html">Home</a>
+        <a href="cv.pdf">CV</a>
+        <a href="https://github.com/CH1NMAY117">GitHub</a>
+        <a href="https://in.linkedin.com/in/chinmay-arora-s117">LinkedIn</a>
+        <a href="https://orcid.org/0009-0008-8235-2187">ORCID</a>
+      </nav>
+    </div>
+    <div class="colophon">
+      <span>© 2026 Chinmay Arora · India</span>
+      <span>Built as plain HTML and CSS. <a href="https://github.com/CH1NMAY117/CH1NMAY117.github.io">Source</a></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
